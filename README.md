@@ -1,4 +1,4 @@
-# XQuant
+# XQuant-Core
 
 **Institutional-Grade Quantitative Trading Framework for Alpha Research and Production**
 
