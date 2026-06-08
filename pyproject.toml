@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "xquant-core"
 version = "0.1.0"
 authors = [
-  { name="XQuant Team", email="maintainers@xquant.org" },
+  { name="ak495867", email="maintainers@xquant.org" },
 ]
 description = "Institutional-grade quantitative trading framework for alpha research and production."
 readme = "README.md"
@@ -36,8 +36,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/xquant/xquant-core"
-"Bug Tracker" = "https://github.com/xquant/xquant-core/issues"
+"Homepage" = "https://github.com/ak495867/xquant-core"
+"Bug Tracker" = "https://github.com/ak495867/xquant-core/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
