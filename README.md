@@ -4,6 +4,7 @@
 
 XQuant is a high-performance, modular framework designed for the development, backtesting, and deployment of quantitative trading strategies. Built with an emphasis on mathematical rigor and architectural flexibility, XQuant provides researchers and engineers with the tools necessary to bridge the gap between abstract alpha discovery and systematic production execution.
 
+Python Library : [ https://pypi.org/project/xquant-core/ ]
 ---
 
 ## Technical Foundations
