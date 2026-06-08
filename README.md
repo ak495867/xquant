@@ -69,9 +69,9 @@ python examples/crypto_mean_reversion.py
 Researchers can utilize the modular API to build custom pipelines:
 
 ```python
-from xquant.data.loader import DataLoader
-from xquant.features.technical import RSI
-from xquant.backtest.engine.vectorized import VectorizedEngine
+from xquant-core.data.loader import DataLoader
+from xquant-core.features.technical import RSI
+from xquant-core.backtest.engine.vectorized import VectorizedEngine
 
 # Ingestion
 data = DataLoader().load("AAPL", start_date="2022-01-01")
