@@ -7,8 +7,8 @@ This guide provides a comprehensive overview of how to use XQuant-Core for your 
 The `DataLoader` is your primary entry point for fetching market data. It uses adapters to interface with different providers.
 
 ```python
-from xquant.data.loader import DataLoader
-from xquant.data.adapters.ccxt import CCXTAdapter
+from xquant-core.data.loader import DataLoader
+from xquant-core.data.adapters.ccxt import CCXTAdapter
 
 # Default yfinance loader
 loader = DataLoader()
@@ -24,7 +24,7 @@ btc_data = crypto_loader.load("BTC/USDT", start_date="2023-01-01")
 Use the `Factor` interface to compute technical indicators or custom microstructure features.
 
 ```python
-from xquant.features.technical import RSI, BollingerBands
+from xquant-core.features.technical import RSI, BollingerBands
 
 # Initialize factors
 rsi_14 = RSI(window=14)
@@ -40,7 +40,7 @@ data['bb_width'] = bb_20.compute(data)
 Signals are generated as a Series of target positions (-1, 0, 1). Use the `SignalScorer` to evaluate their predictive power.
 
 ```python
-from xquant.signals.scorer import SignalScorer
+from xquant-core.signals.scorer import SignalScorer
 
 # Simple signal logic
 signals = (data['rsi'] < 30).astype(int)
@@ -57,7 +57,7 @@ XQuant supports both vectorized and event-driven backtesting.
 
 ### Vectorized (Fast Research)
 ```python
-from xquant.backtest.engine.vectorized import VectorizedEngine
+from xquant-core.backtest.engine.vectorized import VectorizedEngine
 
 engine = VectorizedEngine(initial_capital=100000)
 results = engine.run(data, signals, commission=0.001)
@@ -65,7 +65,7 @@ results = engine.run(data, signals, commission=0.001)
 
 ### Event-Driven (Institutional Fidelity)
 ```python
-from xquant.backtest.engine.event import EventDrivenEngine
+from xquant-core.backtest.engine.event import EventDrivenEngine
 # See xquant/backtest/engine/event.py for detailed setup
 ```
 
@@ -74,7 +74,7 @@ from xquant.backtest.engine.event import EventDrivenEngine
 Ensure your results aren't just the result of luck or overfitting.
 
 ```python
-from xquant.validation.overfit import OverfittingValidator
+from xquant-core.validation.overfit import OverfittingValidator
 
 # Calculate Deflated Sharpe Ratio
 dsr = OverfittingValidator.calculate_dsr(
@@ -90,7 +90,7 @@ print(f"Prob. of NOT Overfit: {dsr:.4f}")
 Generate institutional-grade tearsheets and plots.
 
 ```python
-from xquant.reporting.tearsheet import Tearsheet
+from xquant-core.reporting.tearsheet import Tearsheet
 
 ts = Tearsheet(results)
 ts.summary()  # Prints institutional metrics
@@ -102,7 +102,7 @@ ts.generate_html("my_strategy.html")  # Exports visual report
 Transition from research to production with CCXT live adapters.
 
 ```python
-from xquant.execution.adapters.ccxt_live import CCXTLiveAdapter
+from xquant-core.execution.adapters.ccxt_live import CCXTLiveAdapter
 
 config = {
     "exchange_id": "binance",

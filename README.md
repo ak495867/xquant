@@ -4,6 +4,7 @@
 
 XQuant is a high-performance, modular framework designed for the development, backtesting, and deployment of quantitative trading strategies. Built with an emphasis on mathematical rigor and architectural flexibility, XQuant provides researchers and engineers with the tools necessary to bridge the gap between abstract alpha discovery and systematic production execution.
 
+Python Library : [ https://pypi.org/project/xquant-core/ ]
 ---
 
 ## Technical Foundations
@@ -69,9 +70,9 @@ python examples/crypto_mean_reversion.py
 Researchers can utilize the modular API to build custom pipelines:
 
 ```python
-from xquant.data.loader import DataLoader
-from xquant.features.technical import RSI
-from xquant.backtest.engine.vectorized import VectorizedEngine
+from xquant-core.data.loader import DataLoader
+from xquant-core.features.technical import RSI
+from xquant-core.backtest.engine.vectorized import VectorizedEngine
 
 # Ingestion
 data = DataLoader().load("AAPL", start_date="2022-01-01")
