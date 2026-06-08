@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xquant"
+version = "0.1.0"
+authors = [
+  { name="XQuant Team", email="maintainers@xquant.org" },
+]
+description = "Institutional-grade quantitative trading framework for alpha research and production."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Development Status :: 3 - Alpha",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "polars>=0.18.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "plotly>=5.15.0",
+    "yfinance>=0.2.20",
+    "ccxt>=4.0.0",
+    "scikit-learn>=1.2.0",
+    "statsmodels>=0.14.0",
+    "ta>=0.10.0",
+    "PyYAML>=6.0",
+    "tqdm>=4.65.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/xquant/xquant"
+"Bug Tracker" = "https://github.com/xquant/xquant/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["xquant*"]
