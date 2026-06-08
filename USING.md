@@ -1,6 +1,6 @@
-# Using XQuant
+# Using XQuant-Core
 
-This guide provides a comprehensive overview of how to use XQuant for your quantitative research and trading.
+This guide provides a comprehensive overview of how to use XQuant-Core for your quantitative research and trading.
 
 ## 1. Data Ingestion
 

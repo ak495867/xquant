@@ -47,9 +47,7 @@ XQuant utilizes a strictly decoupled, layered architecture to ensure modularity 
 
 ### Setup
 ```bash
-git clone https://github.com/ak495867/xquant.git
-cd xquant
-pip install -e .
+pip install xquant-core
 ```
 
 ---

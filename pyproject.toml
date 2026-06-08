@@ -36,8 +36,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/xquant/xquant"
-"Bug Tracker" = "https://github.com/xquant/xquant/issues"
+"Homepage" = "https://github.com/xquant/xquant-core"
+"Bug Tracker" = "https://github.com/xquant/xquant-core/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
