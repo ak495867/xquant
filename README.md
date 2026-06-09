@@ -4,11 +4,12 @@
   <img src="assets/banner.png" alt="Project Banner">
 </p>
 
+[![PyPI version](https://badge.fury.io/py/oron.svg)](https://pypi.org/project/xquant-core/)
+
 **Institutional-Grade Quantitative Trading Framework for Alpha Research and Production**
 
 XQuant is a high-performance, modular framework designed for the development, backtesting, and deployment of quantitative trading strategies. Built with an emphasis on mathematical rigor and architectural flexibility, XQuant provides researchers and engineers with the tools necessary to bridge the gap between abstract alpha discovery and systematic production execution.
 
-Python Library : [ https://pypi.org/project/xquant-core/ ]
 ---
 
 ## Technical Foundations
