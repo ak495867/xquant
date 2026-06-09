@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Project Banner">
 </p>
 
-[![PyPI version](https://badge.fury.io/py/oron.svg)](https://pypi.org/project/xquant-core/)
+[![PyPI version](https://badge.fury.io/py/xquant-core.svg)](https://pypi.org/project/xquant-core/)
 
 **Institutional-Grade Quantitative Trading Framework for Alpha Research and Production**
 
